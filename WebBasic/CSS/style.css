@@ -2,14 +2,53 @@ body{
 	background-color: #EE;
 }
 
+a{
+	text-decoration: none;
+	color: red;
+}
+
 #container{
 	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+h1{
+	margin: 0;
+}
+
 #header{
 	background-color: #66CCFF;
 	color: white;
 	text-align: center;
+}
+
+#content{
+	padding: 10px;
+}
+
+#nav{
+	width: 180px;
+}
+
+#nav ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+
+#nav.selected{
+	font-weight: bold;
+}
+
+#main{
+	width: 600px;
+}
+
+#footer{
+	clear: both;
+	padding: 10px;
+	background-color: #999999;
+	color: white;
+	text-align: right;
 }
