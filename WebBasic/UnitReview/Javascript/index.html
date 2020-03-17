@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Basic | Javascript</title>
+
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script type="text/javascript" src="language.js"></script>
+        <script type="text/javascript" src="degree.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            Computer Languages:<br/>
+            <datalist id="language"></datalist>
+            <input type="text" list="language" name="language">
+            <br/><br/>
+
+            Degree:<br/>
+            <datalist id="degree"></datalist>
+            <input type="text" list="degree" name="degree">
+            <br/><br/>
+
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("input").on('mouseover', function() {
+                    var a = $(this).attr('name');
+                    populate(a);
+                });
+            });
+        </script>
+    </body>
+</html>
