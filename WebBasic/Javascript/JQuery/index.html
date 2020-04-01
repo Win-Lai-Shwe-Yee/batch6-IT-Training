@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <title>JQuery Tutorial</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Let's Have Fun!</h1>
+            <button class="panel-btn" data-panelid="panel1">#btn1</button>
+            <button class="panel-btn" data-panelid="panel2">#btn2</button>
+            <button class="panel-btn" data-panelid="panel3">#btn3</button>
+            <button class="panel-btn" data-panelid="panel4">#btn4</button>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <div id="panel1" class="panel panel-primary">
+                    <div class="panel-heading">
+                        #panel1
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-3">
+                <div id="panel2" class="panel panel-primary">
+                    <div class="panel-heading">
+                        #panel2
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-3">
+                <div id="panel3" class="panel panel-primary">
+                    <div class="panel-heading">
+                        #panel3
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-3">
+                <div id="panel4" class="panel panel-primary">
+                    <div class="panel-heading">
+                        #panel4
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('.panel-btn').click(function(){
+                var id = $('.panel-btn').attr("data-panelid");
+                $('#'+id).toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>
